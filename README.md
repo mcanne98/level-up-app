@@ -1,8 +1,50 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Level Up 🚀
+
+> **Every swipe makes you smarter.**
+
+Level Up is a browser-based learning app that takes the same engagement mechanics kids love from reels, shorts, and swipe-based content — and redirects that attention toward learning.
+
+---
+
+## What it is
+
+Level Up works through a **3-step learning chain**:
+
+```
+Curiosity Mode → School Mode → Mission Mode → Reward
+```
+
+1. **Curiosity Mode** — A short, reel-style hook that makes kids *want* to know more ("Why does a karate kick break boards?")
+2. **School Mode** — Curriculum-aligned lesson that answers the question ("Newton's Second Law — F = ma")
+3. **Mission Mode** — A real-world challenge that applies the learning ("Find 3 examples of force at home")
+4. **Reward** — XP, badges, and parent-approved rewards unlock only after completing the full chain
+
+Kids cannot skip School Mode to get rewards. Curiosity creates the itch; school mode scratches it.
+
+---
+
+## Tech Stack
+
+- **Framework**: Next.js 16 (App Router)
+- **Language**: TypeScript
+- **Styling**: Tailwind CSS v4
+- **Database**: Supabase (PostgreSQL)
+- **Auth**: Supabase Auth
+- **Storage**: Supabase Storage (for mission photo uploads)
+- **PWA**: Service Worker + manifest.json
+- **AI**: Anthropic API (optional — falls back to template generator)
+- **Video**: Pluggable video layer (Fallback Animator / MCP / Mock)
+
+---
 
 ## Getting Started
 
-First, run the development server:
+```bash
+cp .env.example .env.local
+# Fill in Supabase credentials, optional Anthropic API key
+```
+
+Then run the development server:
 
 ```bash
 npm run dev
