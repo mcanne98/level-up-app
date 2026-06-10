@@ -22,22 +22,22 @@ export default function HomePage() {
       {/* CTAs */}
       <div className="flex flex-col gap-4 w-full max-w-xs">
         <Link
-          href="/child/feed"
+          href="/child-login"
           className="w-full h-14 flex items-center justify-center rounded-2xl bg-gradient-to-r from-violet-600 to-pink-600 text-white font-black text-lg shadow-2xl shadow-violet-600/40 hover:scale-105 transition-transform"
         >
           🎮 I'm a Student
         </Link>
         <Link
-          href="/parent/dashboard"
+          href="/signup"
           className="w-full h-14 flex items-center justify-center rounded-2xl bg-white/10 border border-white/20 text-white font-bold text-base hover:bg-white/20 transition-colors"
         >
-          👨‍👩‍👧 Parent Dashboard
+          👨‍👩‍👧 Create Family Account
         </Link>
         <Link
-          href="/admin/dashboard"
+          href="/parent-login"
           className="w-full h-12 flex items-center justify-center rounded-2xl text-white/50 font-medium text-sm hover:text-white/80 transition-colors"
         >
-          ⚙️ Admin
+          Already have an account? Parent Login →
         </Link>
       </div>
 
