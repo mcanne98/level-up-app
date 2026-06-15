@@ -28,7 +28,7 @@ export async function POST(req: NextRequest) {
   const child = demoStore.childByUsername(username)
 
   // Always run password comparison to prevent timing attacks
-  const dummyHash = 'pbkdf2$210000$0000000000000000$0000000000000000000000000000000000000000000000000000000000000000'
+  const dummyHash = 'pbkdf2$100000$64756d6d7973616c7464756d6d797361$408096275abda8e3d1f51c36f24b2149e4afa913d42373c5972d58a638cd8f96'
   const passwordOk = child
     ? await verifyPassword(password, child.passwordHash)
     : await verifyPassword(password, dummyHash).catch(() => false)

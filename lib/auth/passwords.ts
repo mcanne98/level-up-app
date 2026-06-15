@@ -4,7 +4,7 @@
  * Format: pbkdf2$<iterations>$<salt_hex>$<hash_hex>
  */
 
-const ITERATIONS  = 210_000 // OWASP 2024 recommendation for PBKDF2-SHA256
+const ITERATIONS  = 100_000 // Cloudflare Workers max for PBKDF2-SHA256
 const HASH_LENGTH = 32      // 256-bit output
 
 function getCrypto(): typeof crypto {
